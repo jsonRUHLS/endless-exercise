@@ -12,7 +12,7 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "lint": "tsc --noEmit && eslint . --ext js,ts,json --quiet --fix",
+    "lint": "ng lint",
     "e2e": "ng e2e"
   },
   "license": "MIT",
@@ -32,16 +32,20 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1102.13",
+    "@angular-eslint/builder": "4.3.0",
+    "@angular-eslint/eslint-plugin": "4.3.0",
+    "@angular-eslint/eslint-plugin-template": "4.3.0",
+    "@angular-eslint/schematics": "4.3.0",
+    "@angular-eslint/template-parser": "4.3.0",
     "@angular/cli": "~11.2.13",
     "@angular/compiler-cli": "~11.2.14",
     "@angular/language-service": "~11.2.14",
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
-    "@typescript-eslint/eslint-plugin": "^4.23.0",
-    "@typescript-eslint/parser": "^4.23.0",
-    "codelyzer": "^6.0.0",
-    "eslint": "^7.26.0",
+    "@typescript-eslint/eslint-plugin": "4.16.1",
+    "@typescript-eslint/parser": "4.16.1",
+    "eslint": "^7.6.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
     "jasmine-core": "~3.6.0",
@@ -55,7 +59,6 @@
     "prettier-eslint": "^12.0.0",
     "protractor": "~7.0.0",
     "ts-node": "~7.0.0",
-    "tslint": "~6.1.0",
     "typescript": "~4.0.7"
   }
 }
