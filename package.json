@@ -1,6 +1,12 @@
 {
   "name": "endless",
   "version": "0.0.0",
+  "description": "Video games shopping and delivery app.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsonRUHLS/endless.git"
+  },
+  "author": "Jason Ruhlin<jsonruhls@gmail.com>",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,6 +15,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.0",
@@ -43,17 +50,5 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
-  },
-  "description": "Video games shopping and delivery app.",
-  "main": "app.module.ts",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jsonRUHLS/endless.git"
-  },
-  "author": "jsonRUHLS",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jsonRUHLS/endless/issues"
-  },
-  "homepage": "https://github.com/jsonRUHLS/endless#readme"
+  }
 }
