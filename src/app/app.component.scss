@@ -1,0 +1,91 @@
+// top bar section
+
+.container {
+  height: 30px;
+  background-color: #222222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container .logo {
+  position: relative;
+  left: 15%;
+  max-width: 250px;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.container .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 15px;
+}
+
+.container .logo a img {
+  max-width: 100%;
+  max-height: 60px;
+}
+
+// hero section
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("../assets/photo-couch.jpeg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-content {
+  padding-top: 300px;
+  left: 15%;
+  padding-bottom: 5%;
+  position: relative;
+  color: white;
+}
+
+h1.hero {
+  font-family: "LatoThin";
+}
+
+h6.hero {
+  font-family: "LatoLight";
+}
+
+p.hero {
+  font-family: "LatoLight";
+}
+
+button.get-started {
+  background: #50e3c2;
+  border: none;
+  border-radius: 12px;
+  padding: 5px 20px;
+}
+
+button.get-started:hover {
+  background: #b4e4d9;
+  cursor: pointer;
+}
+
+// how it works section
+
+.how-it-works {
+  height: 300px;
+}
