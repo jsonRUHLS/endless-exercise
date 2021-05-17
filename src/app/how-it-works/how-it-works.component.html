@@ -1,3 +1,16 @@
-<div class="steps-container" *ngFor="let step of steps">
-  <div class="steps">{{step.stepNumber}}</div>
-</div>
+<div class="heading"><h2>How It Works</h2></div>
+<ul class="steps">
+  <li class="steps__item" *ngFor="let step of steps">
+    <div class="step">
+      <div class="step__content">
+        <span class="step__number">0{{ step.stepNumber }}</span>
+        <div class="step__title" *ngFor="let version of step.versionContent">
+          {{ version.title }}
+        </div>
+        <p *ngFor="let version of step.versionContent" class="step__text">
+          {{ version.body }}
+        </p>
+      </div>
+    </div>
+  </li>
+</ul>

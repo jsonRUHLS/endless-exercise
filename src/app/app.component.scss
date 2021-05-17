@@ -1,3 +1,13 @@
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+ul {
+  padding-inline-start: 0!important;
+}
+
 // top bar section
 
 .container {
@@ -43,7 +53,7 @@
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url("../assets/photo-couch.jpeg");
+    url('../assets/photo-couch.jpeg');
   width: 100%;
   height: 100%;
   background-position: center;
@@ -61,15 +71,15 @@
 }
 
 h1.hero {
-  font-family: "LatoThin";
+  font-family: 'LatoThin';
 }
 
 h6.hero {
-  font-family: "LatoLight";
+  font-family: 'LatoLight';
 }
 
 p.hero {
-  font-family: "LatoLight";
+  font-family: 'LatoLight';
 }
 
 button.get-started {
