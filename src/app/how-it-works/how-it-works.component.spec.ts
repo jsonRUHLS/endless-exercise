@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HowItWorksComponent } from './how-it-works.component';
@@ -8,9 +9,9 @@ describe('HowItWorksComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HowItWorksComponent ]
-    })
-    .compileComponents();
+      imports: [HttpClientModule],
+      declarations: [HowItWorksComponent]
+    }).compileComponents();
   });
 
   beforeEach(() => {
