@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Subject } from 'rxjs';
 import { ISteps } from '../core/interfaces/steps.interface';
 import { StepsService } from '../core/services/steps.service';
 
@@ -7,8 +8,9 @@ import { StepsService } from '../core/services/steps.service';
   templateUrl: './how-it-works.component.html',
   styleUrls: ['./how-it-works.component.scss']
 })
-export class HowItWorksComponent implements OnInit {
+export class HowItWorksComponent implements OnDestroy, OnInit {
   public steps: ISteps[];
+  private ngUnsubscribe: Subject<void> = new Subject<void>();
 
   // eslint-disable-next-line prettier/prettier
   constructor(private stepsService: StepsService) { }
@@ -45,5 +47,10 @@ export class HowItWorksComponent implements OnInit {
         // }
       });
     });
+  }
+
+  ngOnDestroy(): void {
+    this.ngUnsubscribe.next();
+    this.ngUnsubscribe.complete();
   }
 }
