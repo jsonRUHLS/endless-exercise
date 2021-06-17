@@ -12,8 +12,8 @@
     "ng": "ng",
     "start": "ng serve",
     "start:prod": "node server.js",
-    "build": "npm run clean:dist && ng build",
-    "build:prod": "npm run clean:dist && ng build && npm run start:prod",
+    "build:local": "npm run clean:dist && ng build",
+    "build": "npm run clean:dist && ng build && npm run start:prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
