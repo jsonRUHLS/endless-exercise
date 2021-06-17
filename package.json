@@ -10,10 +10,8 @@
   "scripts": {
     "clean:dist": "rimraf dist/**",
     "ng": "ng",
-    "start": "ng serve",
-    "start:prod": "node server.js",
-    "build:local": "npm run clean:dist && ng build",
-    "build": "npm run clean:dist && ng build && npm run start:prod",
+    "start": "node server.js",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
